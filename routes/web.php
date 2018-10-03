@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+//post request 
+Route::post('/login', function () {
+    return view('login');
+});
+
+Route::get('about', function () {
+    return view('about');
+});
+Route::get('home', function () {
+    return view('home');
 });
