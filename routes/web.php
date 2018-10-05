@@ -20,9 +20,8 @@ Route::post('/login', function () {
     return view('login');
 });
 
-Route::get('about', function () {
-    return view('about');
+Route::get('/contacts', function () {
+    return view('contacts');
 });
-Route::get('home', function () {
-    return view('home');
-});
+
+Route::post('/contacts/submit', 'MessagesController@submit');

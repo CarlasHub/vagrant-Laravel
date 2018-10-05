@@ -1,0 +1,37 @@
+// Font Mixins
+@mixin serif-font {
+  font-family: auto;
+}
+@mixin script-font {
+  font-family: Arial;
+}
+@mixin body-font {
+  font-family: sans-serif;
+}
+@mixin heading-font {
+  font-family: auto;
+}
+ @mixin mobile{
+        @media (min-width:#{$sm}){
+            @content;
+        }
+    }
+
+    @mixin tablet{
+        @media (min-width:#{$md}){
+            @content;
+        }
+    }
+
+    @mixin desktop{
+        @media (min-width:#{$lg}){
+            @content;
+        }
+    }
+
+    @mixin desktop-large{
+        @media (min-width:#{$xl}){
+            @content;
+        }
+    }
+
