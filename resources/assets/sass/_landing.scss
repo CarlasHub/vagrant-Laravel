@@ -1,0 +1,37 @@
+  
+.top-hero {
+  background-color: #fafafa;
+  background-image: linear-gradient(rgba($color-gunmetal, .75), rgba($color-gunmetal, .75)), url("https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center center;
+  //background-attachment: fixed;
+  // min-height: 800px;
+  height: 100vh;
+  padding-top: 125px;
+  
+  
+  display: flex;
+  align-items: center;
+  
+  h1 {
+    color: #FEC503;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 50%;
+    letter-spacing: -1px;
+    line-height: .9;
+  }
+  p {
+    color: $color-antiwhite;
+  }
+  @include bp-sm {
+    min-height: 400px;
+    padding-top: 50px;
+    h1 {
+      font-size: 36px;
+      margin-top: 50px;
+    }
+  }
+}
+

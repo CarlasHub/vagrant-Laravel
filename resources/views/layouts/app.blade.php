@@ -12,9 +12,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/app.css">
 <body>
-    <div class="container">
+    <div class="">
         @yield('content')
     </div>
+ <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="/js/app.js"></script>
 </body>
 </html>

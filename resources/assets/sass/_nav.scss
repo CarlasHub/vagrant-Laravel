@@ -11,16 +11,7 @@
     background-color: $primary;
     @include heading-font;
   }
-  .navbar-brand {
-    color: $primary;
-    @include script-font;
-    &.active,
-    &:active,
-    &:focus,
-    &:hover {
-      color: darken($primary, 10%);
-    }
-  }
+  
   .navbar-nav {
     .nav-item {
       .nav-link {
