@@ -31,4 +31,9 @@ Route::get('/', 'PagesController@index');
 Route::get('/home', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 Route::get('/contacts', 'PagesController@contacts');
+//Route::get('/posts/index', 'PostsController@index');
+
+// this will create all the routes for my posts controller 
+//need to run php artisan route:list  and check if all are in place
+Route::resource('posts', 'PostsController');
 
