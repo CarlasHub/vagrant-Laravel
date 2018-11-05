@@ -2,8 +2,6 @@
 
 @extends('layouts.app')
 @section('content')
-@include('includes/nav')
-
   <!-- jumbotron -->
   <header id="home" class="top-hero  bg-faded">
     <div class="container animated fadeInUp">
