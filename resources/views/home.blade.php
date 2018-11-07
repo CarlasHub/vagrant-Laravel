@@ -12,6 +12,7 @@
                         <div class="alert alert-success">
                             {{ session('status') }}
                         </div>
+                        <a href="/landing" class="bt btn-sucess"> Back To home</a>
                     @endif
 
                     You are logged in!
