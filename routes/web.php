@@ -37,3 +37,7 @@ Route::get('/contacts', 'PagesController@contacts');
 //need to run php artisan route:list  and check if all are in place
 Route::resource('posts', 'PostsController');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

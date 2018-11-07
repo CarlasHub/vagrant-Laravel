@@ -44,13 +44,14 @@ class PostsController extends Controller
             'body'   => 'required',
             'author' => 'required'
         ]);
-        //create posts
-        $post = Post::find($id); 
+
+        $post = new Post; 
         $post->title = $request->input('title');
         $post->author = $request->input('author');
         $post->body = $request->input('body');
         $post->save();
-        return redirect('/posts')->with('success', 'Post Created');
+        return redirect('/posts')->with('success', 'Post was created');
+        
     }
 
     /**
@@ -92,12 +93,14 @@ class PostsController extends Controller
             'author' => 'required'
         ]);
         //create posts
-        $post = new Post; 
+         //create posts
+        $post = Post::find($id); 
         $post->title = $request->input('title');
         $post->author = $request->input('author');
         $post->body = $request->input('body');
         $post->save();
-        return redirect('/posts')->with('success', 'Post was Updated');
+        return redirect('/posts')->with('success', 'Post Updated');
+       
     }
 
     /**

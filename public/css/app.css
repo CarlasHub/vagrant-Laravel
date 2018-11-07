@@ -90,6 +90,13 @@
   background-color: #212529;
 }
 
+#mainNav.auth {
+  border: solid 2px #fed136;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 2px;
+}
+
 #mainNav .navbar-toggler {
   font-size: 12px;
   right: 0;
