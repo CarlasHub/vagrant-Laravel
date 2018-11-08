@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 //add post 
 use App\Models\Post;
 
+use App\Models\User;
+
+
 class PostsController extends Controller
 {
     /**

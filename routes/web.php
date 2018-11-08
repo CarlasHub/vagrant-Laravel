@@ -30,6 +30,7 @@ Route::post('/contacts/submit', 'MessagesController@submit');
 Route::get('/', 'PagesController@index');
 Route::get('/home', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
+Route::get('/myposts', 'PagesController@myposts');
 Route::get('/contacts', 'PagesController@contacts');
 //Route::get('/posts/index', 'PostsController@index');
 

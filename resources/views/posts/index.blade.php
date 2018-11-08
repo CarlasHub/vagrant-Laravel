@@ -6,9 +6,9 @@
         <h1>Posts</h1>
 
         @foreach($posts as $post)
-            <div class="well">
+            <div class="well py-3">
                <h3><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
-               <small>Written on {{$post->created_at}}</small> 
+               <small>Written on {{$post->created_at}} by {{$post->author}}</small> 
             </div>
         @endforeach
         {{$posts->links()}}

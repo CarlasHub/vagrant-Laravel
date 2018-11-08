@@ -9,9 +9,8 @@ class PagesController extends Controller
 {
     public function index(){
 
-        $user_id = auth()->user()->id;
-        $user = User::find($user_id);
-        return view('landing')->with('posts',$user->posts);
+       
+        return view('landing');
 
     }
 
@@ -25,6 +24,7 @@ class PagesController extends Controller
         $user_id = auth()->user()->id;
         $user = User::find($user_id);
         return view('myposts')->with('posts',$user->posts);
+        //create a 404 page 
     }
     
     public function contacts(){

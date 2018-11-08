@@ -28,8 +28,8 @@
                 @else
                 <ul>
                 <li  class="nav-item pr-2">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
-                            {{ Auth::user()->name }} 
+                  <a href="/myposts" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
+                            {{ strtoupper(Auth::user()->name) }} 
                   </a>
                 </li>
          
@@ -47,7 +47,7 @@
               </ul>
                          
                 @endif
-                  <a href="/posts/myposts">My Posts</a>
+                  <a href="/posts/create" class="text-success">New Post</a>
               </ul>
             </div>
           </div>
