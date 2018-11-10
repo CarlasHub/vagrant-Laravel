@@ -15,22 +15,26 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+    @include('includes/nav')
     <div id="app">
-       @include('includes/nav')
-        <div class="">
-            @include('includes/messages')
-            @yield('content')
+        <div class="content">
+       
+                @include('includes/messages')
+                @yield('content')
+           
         </div> 
     </div>
 
     <!-- Scripts -->
-    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+    <script type=text/javascript src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script>
     CKEDITOR.replace( 'article-ckeditor' );
-    </script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-        <script type="text/javascript" src="{{ URL::asset('assets/js/jquery.js') }}"></script>
-    <script type="text/javascript" src="{{ URL::asset('assets/js/bootstrap.min.js') }}"></script>
+    </script-->
+  
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
+

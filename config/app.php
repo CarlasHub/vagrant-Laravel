@@ -135,6 +135,7 @@ return [
     |
     */
 
+
     'providers' => [
 
         /*
@@ -164,12 +165,14 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Unisharp\Ckeditor\ServiceProvider::class,
-
+       
 
         /*
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
+        Cornford\Googlmapper\MapperServiceProvider::class,
+
 
         /*
          * Application Service Providers...
@@ -235,6 +238,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        'Mapper'=> Cornford\Googlmapper\Facades\MapperFacade::class,
 
     ],
 
