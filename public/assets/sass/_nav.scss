@@ -1,3 +1,5 @@
+
+
 // Styling for the navbar
 #mainNav {
   background-color: $gray-900;
@@ -7,11 +9,11 @@
     padding: 13px;
     text-transform: uppercase;
     color: white;
-    border: 0;
-    background-color: $primary;
-    @include heading-font;
+    border: solid 1px;
+    //span .navbar-toggler-icon {
+    //color: $primary!important;
+    // }
   }
-  
   .navbar-nav {
     .nav-item {
       .nav-link {
@@ -29,6 +31,7 @@
     }
   }
 }
+
 @media(min-width:992px) {
   #mainNav {
     padding-top: 25px;
@@ -61,4 +64,9 @@
       }
     }
   }
+}
+
+.content {
+  padding-top: 60px;
+  position: relative;
 }

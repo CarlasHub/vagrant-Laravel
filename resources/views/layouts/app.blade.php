@@ -16,14 +16,15 @@
 </head>
 <body>
     @include('includes/nav')
-    <div id="app">
-        <div class="content">
+        <div class="">
        
                 @include('includes/messages')
                 @yield('content')
            
         </div> 
-    </div>
+        
+    @include('includes/footer')
+
 
     <!-- Scripts -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>

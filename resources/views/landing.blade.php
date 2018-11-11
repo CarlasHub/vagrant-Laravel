@@ -12,11 +12,6 @@
       <a href="/login" type="button" class="js-scroll btn btn-lg btn-default m-t-1 bg-dark" data-scroll-to="#speakers">Login</a>
       <br> 
     </div>
-    
-            
- 
-  
-    
   </header>
-
+@include('map')
 @endsection
