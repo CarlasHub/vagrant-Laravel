@@ -1,26 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);@charset "UTF-8";
 
-.map-wrapper {
-  background: url(/images/mapholder.jpg?f7187fc7c6b0b7acc795931e2436dd69) no-repeat center center;
-  background-size: cover;
-  position: relative;
-  height: 100vh;
-}
-
-.map-wrapper .map-title {
-  position: relative;
-  top: 0;
-  color: white;
-  padding: 20px;
-  z-index: 101;
-}
-
-.map-wrapper .input-group {
-  position: relative;
-  z-index: 101;
-  margin: 0;
-}
-
 .overlay {
   position: absolute;
   background: rgba(0, 0, 0, 0.2);
@@ -35,7 +14,7 @@
 .bg-gray-900 {
   background: #292a3c;
   background: linear-gradient(45deg, #292a3c 0%, #2a2c3d 38%, #343546 70%, #212529 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292a3c', endColorstr='#212529',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292a3c',endColorstr='#212529',GradientType=1 );
 }
 
 .row {
@@ -289,6 +268,7 @@ section {
 
 body {
   margin: 0;
+  height: 100vh;
 }
 
 /* HTML5 display definitions
@@ -708,6 +688,10 @@ table {
 td,
 th {
   padding: 0;
+}
+
+.panel {
+  height: 100vh;
 }
 
 /*!

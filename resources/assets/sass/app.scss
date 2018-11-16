@@ -6,12 +6,12 @@
 // Variables
 @import "mixins";
 //custom
-@import "custom";
+@import "map";
 @import "nav";
 @import "footer";
 @import "landing";
 @import "reset";
-
+@import "auth";
 
 // Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";

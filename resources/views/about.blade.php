@@ -70,7 +70,7 @@
 
                                 </div>
                             </div>
-                            <div class='form-group col-md-8'>
+                            <div class='form-group col-md-10 offset-md-1'>
                                 <label>Map</label>
                                 <div id='venue_map'></div>
                             </div>

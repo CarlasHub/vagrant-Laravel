@@ -1,0 +1,45 @@
+
+.overlay {
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+    right: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.bg-gray-900 {
+    background: rgb(41,42,60);
+    background: -moz-linear-gradient(45deg,rgba(41,42,60,1) 0%,rgba(42,44,61,1) 38%,rgba(52,53,70,1) 70%,rgba(33,37,41,1) 100%);
+    background: -webkit-linear-gradient(45deg,rgba(41,42,60,1) 0%,rgba(42,44,61,1) 38%,rgba(52,53,70,1) 70%,rgba(33,37,41,1) 100%);
+    background: linear-gradient(45deg,rgba(41,42,60,1) 0%,rgba(42,44,61,1) 38%,rgba(52,53,70,1) 70%,rgba(33,37,41,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292a3c',endColorstr='#212529',GradientType=1 );
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col-sm img {
+    width: 200px;
+    height: 200px;
+}
+#file_target img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+#venue_target img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.input-group-addon > .material-icons {
+    font-size: 1.3rem;
+}
+#venue_map {
+    width: 100%;
+    height: 500px;
+    background-color: lavender;
+    border-radius: 4px;
+}

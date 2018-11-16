@@ -40,6 +40,9 @@
                             <li class="nav-item">
                                 <a class="text-success" href="/posts/create">New Post</a>
                             </li>
+                             <li class="nav-item">
+                                <a class="text-success" href="/myposts">{{ strtoupper(Auth::user()->name) }} Posts</a>
+                            </li>
 
                             <li class="nav-item">
                                 <a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
