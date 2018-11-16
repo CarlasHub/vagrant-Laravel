@@ -129,7 +129,69 @@ var app = new Vue({
 /* 3 */
 /***/ (function(module, exports) {
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+if (document.getElementById("venue_map")) {
+    var _mapOptions;
+
+    var myLatlng = new google.maps.LatLng(55.676098, 12.568337);
+    var mapOptions = (_mapOptions = {
+        zoom: 10,
+        minZoom: 3,
+        maxZoom: 18,
+        zoomControl: true,
+        zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.SMALL
+        },
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeControl: !1,
+        scaleControl: false,
+        fullscreenControl: false,
+        streetViewControl: false
+    }, _defineProperty(_mapOptions, "mapTypeControl", false), _defineProperty(_mapOptions, "scrollwheel", true), _defineProperty(_mapOptions, "backgroundColor", '#F2F2F2'), _defineProperty(_mapOptions, "clickableIcons", false), _mapOptions);
+
+    // Attach a map to the DOM Element, with the defined settings
+    var map = new google.maps.Map(document.getElementById("venue_map"), mapOptions);
+
+    // Map Marker
+    map = new google.maps.Map(document.getElementById("venue_map"), mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(48.856614, 2.3522219),
+        // Below is position of marker at the center of the map
+        // position: new google.maps.LatLng(48.8566140,2.1000019),
+        animation: google.maps.Animation.DROP,
+        map: map
+    });
+}
+
+$(function () {
+    $("#venue_geocomplete").geocomplete({
+        map: "#venue_map",
+        mapOptions: mapOptions,
+        details: "form",
+        types: ["geocode", "establishment"]
+    });
+});
+
+$(function () {
+    $('#event_image').on('change', function (event) {
+        var files = event.target.files;
+        var image = files[0];
+        // here's the file size
+        console.log(image.size);
+        var reader = new FileReader();
+        reader.onload = function (file) {
+            var img = new Image();
+            console.log(file);
+            img.src = file.target.result;
+            $('#file_target').html(img);
+        };
+        reader.readAsDataURL(image);
+        console.log(files);
+    });
+});
 
 /***/ }),
 /* 4 */

@@ -13,12 +13,7 @@ section {
 }
 
 .footer-distributed {
-  background: rgb(41,42,60);
-  background: -moz-linear-gradient(45deg, rgba(41,42,60,1) 0%, rgba(42,44,61,1) 38%, rgba(52,53,70,1) 70%, rgba(33,37,41,1) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(41,42,60,1) 0%,rgba(42,44,61,1) 38%,rgba(52,53,70,1) 70%,rgba(33,37,41,1) 100%);
-  background: linear-gradient(45deg, rgba(41,42,60,1) 0%,rgba(42,44,61,1) 38%,rgba(52,53,70,1) 70%,rgba(33,37,41,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292a3c', endColorstr='#212529',GradientType=1 );
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background-color: $gray-900;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -36,7 +31,7 @@ section {
 .footer-distributed p.footer-links {
   font-size: 18px;
   font-weight: bold;
-  color: #ffffff;
+  color: $primary;
   margin: 0 0 10px;
   padding: 0;
   transition: ease .25s;
@@ -54,7 +49,7 @@ section {
   content: "·";
   font-size: 20px;
   left: 0;
-  color: #fff;
+  color: $primary;
   display: inline-block;
   padding-right: 5px;
 }
@@ -76,7 +71,7 @@ section {
   background-color: #33383b;
   border-radius: 2px;
   font-size: 20px;
-  color: #ffffff;
+  color: $primary;
   text-align: center;
   line-height: 35px;
   margin-left: 3px;

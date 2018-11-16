@@ -48,6 +48,31 @@
   height: 200px;
 }
 
+#file_target img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#venue_target img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.input-group-addon > .material-icons {
+  font-size: 1.3rem;
+}
+
+#venue_map {
+  width: 100%;
+  height: 500px;
+  background-color: lavender;
+  border-radius: 4px;
+}
+
 #mainNav {
   background-color: #212529;
 }
@@ -124,11 +149,7 @@ section {
 }
 
 .footer-distributed {
-  background: #292a3c;
-  background: linear-gradient(45deg, #292a3c 0%, #2a2c3d 38%, #343546 70%, #212529 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292a3c', endColorstr='#212529',GradientType=1 );
-  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background-color: #212529;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -148,7 +169,7 @@ section {
 .footer-distributed p.footer-links {
   font-size: 18px;
   font-weight: bold;
-  color: #ffffff;
+  color: #fed136;
   margin: 0 0 10px;
   padding: 0;
   -webkit-transition: ease .25s;
@@ -168,7 +189,7 @@ section {
   content: "\B7";
   font-size: 20px;
   left: 0;
-  color: #fff;
+  color: #fed136;
   display: inline-block;
   padding-right: 5px;
 }
@@ -190,7 +211,7 @@ section {
   background-color: #33383b;
   border-radius: 2px;
   font-size: 20px;
-  color: #ffffff;
+  color: #fed136;
   text-align: center;
   line-height: 35px;
   margin-left: 3px;
