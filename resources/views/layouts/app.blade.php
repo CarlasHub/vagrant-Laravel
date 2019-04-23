@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -28,9 +29,7 @@
 
     <!-- Scripts -->
     <script src="https://maps.google.com/maps/api/js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
-
-    <script type=text/javascript src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!--script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script>
     CKEDITOR.replace( 'article-ckeditor' );
